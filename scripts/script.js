@@ -4,7 +4,6 @@ window.onload = () => {
     });
 }
 $(document).ready(function () {
-
     $('#check').on('click', function () {
         $('#modal-menu-container').css('transform', 'translateX(0%)');
         $('#overlayer').css('display', 'block');

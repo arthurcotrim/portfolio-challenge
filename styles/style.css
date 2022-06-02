@@ -7,10 +7,14 @@
 }
 
 body {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: rgb(0, 158, 250);
 
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header{
+    z-index: 6;
 }
 
 ul {
@@ -19,126 +23,92 @@ ul {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 158, 250);
 }
 
-#header-scroll {
-    transition: .3s all ease-in-out;
-    padding: 1rem 0;
-}
-
-#header-scroll.sticky {
-    position: fixed;
-
-    width: 100%;
-    background-color: rgb(44, 43, 43);
-
-    padding: .5rem 0
-}
-
-
-#overlayer {
-    width: 100%;
-    height: 100%;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    z-index: 1999;
-    background: rgba(51, 51, 51, 0.7);
-}
-
-.modal-menu {
-    width: 300px;
-    height: 100vh;
-
-    position: fixed;
-    right: 0;
-    z-index: 2000;
-
-    padding: 3.3rem 2rem;
-    background-color: #fff;
-
-    transform: translateX(110%);
-
-    box-shadow: -10px 0 20px -10px rgb(0 0 0 / 10%);
-    transition: .3s all ease-in-out;
-}
-
-.modal-menu .modal-menu-header .modal-menu-close span {
-    font-size: 30px;
-
-    display: inline-block;
-
-    padding-left: 10px;
-
-    line-height: 1;
-    cursor: pointer;
-    transition: .3s all ease;
-}
-
-.modal-menu .modal-menu-header {
-    width: 100%;
-    float: left;
-    padding: 0 10px;
-}
-
-.modal-menu .modal-menu-header .modal-menu-close {
-    margin-top: 8px;
-
-    color: #363a3d;
-    font-weight: 500;
-
-    float: right;
-}
-
-.modal-menu .modal-menu-body {
-    position: relative;
-
-    height: calc(100vh - 52px);
-}
-
-.site-nav-wrap {
-    margin: 4rem auto;
-}
-
-.modal-menu .site-nav-wrap>ul>li {
-    display: block;
-    position: relative;
-    line-height: 2;
-    width: 100%;
-}
-
-.modal-menu .site-nav-wrap a {
-    padding: 10px 20px;
-
-    display: block;
-    position: relative;
-
-    color: #212529;
-    font-size: 20px;
-}
-
-.row-menu-hamburger {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-a.active{
-    color: rgb(0, 158, 250) !important;
+.wrapper {
+    padding: 0 2rem;
 }
 
 section {
-    padding: 5rem 0 0;
+    padding: 5rem 0;
 
-    height: 100vh;
+    height: auto;
     text-align: center;
 
     scroll-behavior: smooth;
+}
+
+section h2 {
+    line-height: 2;
+}
+
+section .service-subtitle {
+    line-height: 1.4;
+
+    margin: 0 auto 2rem;
+
+    max-width: 520px;
+}
+
+.cards-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    margin: 1rem auto;
+    padding: 0rem 3rem 3rem;
+
+    border-radius: .3rem;
+    border: 1px solid rgba(0, 4, 74, 0.04);
+    transition: .3s all ease;
+    /* position: relative; */
+
+    overflow: hidden;
+}
+
+.card-header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2rem auto;
+}
+
+.card-image {
+    width: 7rem;
+    height: 7rem;
+
+    background-color: #fff;
+
+    border-radius: 50%;
+
+    box-shadow: 0px 15px 25px rgba(0, 4, 74, 0.04)
+}
+
+.service-title h4 {
+    line-height: 3;
+    font-size: 21px;
+}
+
+.card:hover{
+    box-shadow: 0px 5px 20px 18px rgb(0 4 74 / 4%);
+    /* background-color: #fff; */
+    border: 1px solid transparent;
+
+    color: #000;
+
 }
 
 footer {
@@ -149,13 +119,12 @@ footer {
 }
 
 #services-section {
-    background-color: lightblue
+    border: 1px solid lightblue;
 }
-
 #projects-section {
-    background-color: lightpink
+    border: 1px solid lightpink
 }
 
 #contact-section {
-    background-color: lightgreen
+    border: 1px solid lightgreen
 }
