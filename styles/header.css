@@ -1,17 +1,18 @@
 #header-scroll {
     transition: .3s all ease-in-out;
     padding: 1rem 0;
+
+    border: 1px solid transparent;
 }
 
 #header-scroll.sticky {
     position: fixed;
 
     width: 100%;
-    background-color: rgb(44, 43, 43);
-
+    background-color: rgb(247, 245, 245);
+    border: 1px solid transparent;
     padding: .5rem 0
 }
-
 
 #overlayer {
     width: 100%;
@@ -54,6 +55,10 @@
     line-height: 1;
     cursor: pointer;
     transition: .3s all ease;
+}
+
+.modal-menu .modal-menu-header .modal-menu-close span:hover{
+    color: lightcoral;
 }
 
 .modal-menu .modal-menu-header {
@@ -101,9 +106,13 @@
 .row-menu-hamburger {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 a.active{
+    color: rgb(0, 158, 250) !important;
+}
+
+a:hover{
     color: rgb(0, 158, 250) !important;
 }

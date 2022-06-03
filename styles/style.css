@@ -8,12 +8,12 @@
 
 body {
     background-color: #fff;
-    color: rgb(0, 158, 250);
+    color: rgb(44, 43, 43);
 
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-header{
+header {
     z-index: 6;
 }
 
@@ -26,8 +26,16 @@ a {
     color: rgb(0, 158, 250);
 }
 
+h1{
+    color: rgb(0, 158, 250);
+}
+
 .wrapper {
     padding: 0 2rem;
+}
+
+.welcome-text{
+    text-align: left;
 }
 
 section {
@@ -41,6 +49,7 @@ section {
 
 section h2 {
     line-height: 2;
+    color: rgb(0, 158, 250);
 }
 
 section .service-subtitle {
@@ -69,7 +78,7 @@ section .service-subtitle {
     padding: 0rem 3rem 3rem;
 
     border-radius: .3rem;
-    border: 1px solid rgba(0, 4, 74, 0.04);
+    border: 1px solid rgba(0, 4, 74, 0.09);
     transition: .3s all ease;
     /* position: relative; */
 
@@ -102,29 +111,166 @@ section .service-subtitle {
     font-size: 21px;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0px 5px 20px 18px rgb(0 4 74 / 4%);
     /* background-color: #fff; */
     border: 1px solid transparent;
 
-    color: #000;
+    color: rgb(0, 158, 250);
 
+}
+
+.contact-container {
+    width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 1rem 2rem;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.contact-content {
+    border-radius: .5rem;
+
+    margin: 0 auto;
+}
+
+.write-us {
+    width: 100%;
+
+    background-color: #272a34;
+    text-align: left;
+    color: #fff;
+
+    padding: 1.9rem 1.5rem 3.5rem;
+
+    border: none;
+    border-color: transparent;
+    border-top-left-radius: .4rem;
+    border-top-right-radius: .4rem;
+}
+
+
+.write-us h3 {
+    line-height: 3;
+}
+
+.form-group input,
+textarea {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+
+    width: 100%;
+
+    margin: .7rem auto;
+    padding-bottom: .7rem;
+
+    background-color: transparent;
+    resize: none;
+
+    text-align: left;
+    font-size: medium;
+
+    color: #fff;
+
+    transition: .3s all ease-in-out;
+}
+
+.form-group input:focus,
+textarea:focus {
+    border-bottom: 1px solid rgb(255, 255, 255, .5);
+}
+
+.write-us button {
+    border: none;
+    border-radius: .2rem;
+
+    margin-top: .3rem;
+    padding: .9rem;
+
+    background-color: rgb(0, 158, 250);
+    color: #fff;
+
+    transition: .3s all ease-in-out;
+
+    cursor: pointer;
+}
+
+.write-us button:hover {
+    background-color: rgb(0, 142, 224);
+}
+
+.contact-information {
+    width: 100%;
+
+    text-align: left;
+
+    padding: 1.5rem 1.2rem;
+
+    background-color: #1c1e25;
+
+    color: #fff;
+
+    border: none;
+    border-color: transparent;
+    border-bottom-left-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+}
+
+.contact-information h3 {
+    line-height: 2;
+}
+
+.contact-information h3~p {
+    line-height: 2;
+    font-weight: 300;
+
+    font-size: .9rem;
+}
+
+.box-container {
+    margin: 1rem auto;
+}
+
+.box-information {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 1rem auto;
+    padding: 1rem 0;
+
+    font-size: .9rem;
+}
+
+.image-information {
+    width: 4rem;
+    height: 4rem;
+
+    background-color: #181a22;
+    box-shadow: 0px 5px 20px 18px rgb(0 4 74 / 4%);
+
+    border-radius: 50%;
+}
+
+.box-information p {
+    max-width: 200px;
 }
 
 footer {
-    background-color: rgb(44, 43, 43);
+    background-color: #181a22;
     text-align: center;
 
     padding: 1rem 0;
-}
 
-#services-section {
-    border: 1px solid lightblue;
-}
-#projects-section {
-    border: 1px solid lightpink
-}
-
-#contact-section {
-    border: 1px solid lightgreen
+    color: #fff;
 }
