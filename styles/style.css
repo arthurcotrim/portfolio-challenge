@@ -7,6 +7,8 @@
 }
 
 body {
+    overflow-x: hidden;
+
     background-color: #fff;
     color: rgb(44, 43, 43);
 
@@ -26,7 +28,7 @@ a {
     color: rgb(0, 158, 250);
 }
 
-h1{
+h1 {
     color: rgb(0, 158, 250);
 }
 
@@ -34,8 +36,48 @@ h1{
     padding: 0 2rem;
 }
 
-.welcome-text{
-    text-align: left;
+.welcome-text {
+    text-align: center;
+}
+
+.welcome-text h1 {
+    font-size: 2rem;
+    font-weight: 500;
+
+    line-height: 2;
+}
+
+.welcome-text p {
+    line-height: .6;
+
+    font-size: 1.2rem;
+}
+
+.btn{
+    padding: .8125rem 1.25rem;
+}
+
+#download-cv:hover{
+    color: #fff !important;
+}
+
+.btn-primary-soft {
+    background-color: rgba(51,94,234,.1);
+    color: #3c5297;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1.5rem rgba(22, 28, 45, .1) !important;
+}
+
+.lift {
+    transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.lift:focus,
+.lift:hover {
+    box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, .1), 0 .5rem 1rem -.75rem rgba(22, 28, 45, .1) !important;
+    transform: translate3d(0, -3px, 0);
 }
 
 section {
@@ -120,31 +162,7 @@ section .service-subtitle {
 
 }
 
-.contact-container {
-    width: 100%;
-    height: auto;
-
-    margin: 0 auto;
-    padding: 1rem 2rem;
-
-    text-align: center;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-direction: column;
-}
-
-.contact-content {
-    border-radius: .5rem;
-
-    margin: 0 auto;
-}
-
 .write-us {
-    width: 100%;
-
     background-color: #272a34;
     text-align: left;
     color: #fff;
@@ -157,9 +175,22 @@ section .service-subtitle {
     border-top-right-radius: .4rem;
 }
 
+.form-control:focus{
+    background-color: transparent;
+}
+
+.form-control textarea{
+    background-color: transparent !important;
+}
 
 .write-us h3 {
     line-height: 3;
+}
+
+.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .form-group input,
@@ -178,7 +209,7 @@ textarea {
     text-align: left;
     font-size: medium;
 
-    color: #fff;
+    color: #fff !important;
 
     transition: .3s all ease-in-out;
 }
@@ -193,7 +224,7 @@ textarea:focus {
     border-radius: .2rem;
 
     margin-top: .3rem;
-    padding: .9rem;
+    padding: .7rem;
 
     background-color: rgb(0, 158, 250);
     color: #fff;
@@ -208,8 +239,6 @@ textarea:focus {
 }
 
 .contact-information {
-    width: 100%;
-
     text-align: left;
 
     padding: 1.5rem 1.2rem;

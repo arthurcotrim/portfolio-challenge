@@ -1,13 +1,8 @@
-window.onload = () => {
-    window.addEventListener('scroll', () => {
-        $('#header-scroll').toggleClass('sticky', window.scrollY > 0);
-    });
-}
 $(document).ready(function () {
-    $('#check').on('click', function () {
-        $('#modal-menu-container').css('transform', 'translateX(0%)');
-        $('#overlayer').css('display', 'block');
-    })
+    // $('#check').on('click', function () {
+    //     $('#modal-menu-container').css('transform', 'translateX(0%)');
+    //     $('#overlayer').css('display', 'block');
+    // })
 
     $('#modal-close').on('click', function () {
         $('#modal-menu-container').css('transform', 'translateX(110%)');
